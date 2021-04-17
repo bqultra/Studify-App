@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lT8-1u-EN9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XD5-i5-qUK">
+            <objects>
+                <tabBarController id="lT8-1u-EN9" customClass="ViewController" customModule="Studify" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Pe-OC-1MI" customClass="CustomTabBar" customModule="Studify" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="25L-4g-TnK" kind="relationship" relationship="viewControllers" id="dG2-d8-aUP"/>
+                        <segue destination="epI-Uc-ybh" kind="relationship" relationship="viewControllers" id="A1J-ad-QOq"/>
+                        <segue destination="OYy-I6-PWM" kind="relationship" relationship="viewControllers" id="FNI-Pm-Hg4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3SY-oR-3gp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="-402"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="oEB-Sn-9FB">
+            <objects>
+                <navigationController id="25L-4g-TnK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="5Lm-vR-IsY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nAH-sL-SRN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bEZ-xI-Egu" kind="relationship" relationship="rootViewController" id="sXO-7Q-ACL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldk-hT-xQT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1114" y="396"/>
+        </scene>
+        <!--Studify-->
+        <scene sceneID="HJD-56-xwB">
+            <objects>
+                <viewController id="bEZ-xI-Egu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e93-VQ-43b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lvA-d3-Pxr"/>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Studify" id="0Pm-CG-1A6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2v-oK-liZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1114" y="1071"/>
+        </scene>
+        <!--Check-->
+        <scene sceneID="38O-a8-VHN">
+            <objects>
+                <navigationController id="epI-Uc-ybh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Check" image="check" id="egW-XJ-Yyr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9aO-Y9-ppI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GeC-Il-HIx" kind="relationship" relationship="rootViewController" id="a0q-eV-5NU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9M4-9a-fAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="396"/>
+        </scene>
+        <!--Plan-->
+        <scene sceneID="2gL-v0-aQS">
+            <objects>
+                <navigationController id="OYy-I6-PWM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Plan" image="Calendar" id="rZc-aX-cyL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bbn-2B-y0W">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bq9-iy-gK8" kind="relationship" relationship="rootViewController" id="eex-4P-2W6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHl-8B-6GT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="396"/>
+        </scene>
+        <!--Studify-->
+        <scene sceneID="Pah-UN-Pnc">
+            <objects>
+                <viewController id="GeC-Il-HIx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJ0-vH-aa0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TbK-mP-2xj"/>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Studify" id="Xry-wz-dO8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kv2-Co-NtU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="1071"/>
+        </scene>
+        <!--Studify-->
+        <scene sceneID="kAf-tM-7DT">
+            <objects>
+                <viewController id="bq9-iy-gK8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZp-Q7-ToM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5Aw-Ma-6Qg"/>
+                        <color key="backgroundColor" red="0.035294117647058823" green="0.035294117647058823" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Studify" id="NNu-Qp-EBe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZ5-aY-scU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="1071"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calendar" width="30" height="28"/>
+        <image name="Home" width="34" height="26"/>
+        <image name="check" width="28" height="28"/>
+    </resources>
+</document>
